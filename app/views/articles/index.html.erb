@@ -1,0 +1,9 @@
+<ul>
+  <% if @articles.present? %>
+    <% @articles.each do |article| %>
+      <li><%= article.title %></li>
+    <% end %>
+  <% else %>
+    <li>No articles available.</li>
+  <% end %>
+</ul>
